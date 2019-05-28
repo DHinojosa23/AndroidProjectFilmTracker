@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MyFilmsApp</string>
+
+    <string-array name="genres">
+        <item>Acción</item>
+        <item>Animación</item>
+        <item>Bélica</item>
+        <item>Comedia</item>
+        <item>Drama</item>
+        <item>Fantasía</item>
+        <item>Musical</item>
+        <item>Terror</item>
+        <item>Thriller</item>
+        <item>Western</item>
+    </string-array>
+
+</resources>

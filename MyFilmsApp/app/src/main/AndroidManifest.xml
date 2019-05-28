@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myfilmsapp">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".QuizActivity"
+            android:label="Quiz"
+            android:parentActivityName=".MainActivity"
+            android:configChanges="orientation|screenSize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.SENDTO" />
+                <data android:scheme="mailto" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".ViewStaticFilmActivity"
+            android:label="Información de Pelicula"
+            android:parentActivityName=".StaticFilmsActivity"
+            android:configChanges="orientation|screenSize"/>
+        <activity
+            android:name=".EditFilmActivity"
+            android:label="Editar Pelicula"
+            android:parentActivityName=".UserFilmsActivity"
+            android:configChanges="orientation|screenSize"/>
+        <activity
+            android:name=".NewFilmActivity"
+            android:label="Nueva Pelicula"
+            android:parentActivityName=".UserFilmsActivity"
+            android:configChanges="orientation|screenSize"/>
+        <activity
+            android:name=".StaticFilmsActivity"
+            android:label="Listado de Peliculas"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".UserFilmsActivity"
+            android:label="Listado de Peliculas"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="FilmDiary" />
+        <activity
+            android:name=".SplashActivity"
+            android:label="FilmDiary">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

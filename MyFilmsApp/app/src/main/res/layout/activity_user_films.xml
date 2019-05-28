@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayoutUser"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserFilmsActivity">
+
+
+    <ListView
+        android:id="@+id/listViewUserFilms"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
+    <ImageView
+        android:id="@+id/imageViewEmptyList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:padding="50dp"
+        android:background="#FFFFFF"
+        app:srcCompat="@drawable/fondo" />
+
+
+
+    <ImageButton
+        android:id="@+id/imageButtonNewFilm"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:padding="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="8sp"
+        android:layout_marginBottom="15sp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/newfilm" />
+
+
+</RelativeLayout>

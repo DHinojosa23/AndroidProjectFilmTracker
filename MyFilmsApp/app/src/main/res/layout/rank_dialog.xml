@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/rank_dialog_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Valoración"
+        android:textSize="24dp" />
+
+    <RatingBar
+        android:id="@+id/dialog_ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:scaleY="0.8"
+        android:scaleX="0.8"
+        android:rating="0.5"
+        android:stepSize="0.5" />
+
+    <TextView
+        android:id="@+id/textViewDialogOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACEPTAR"
+        android:textColor="#084a83"
+        android:layout_gravity="end"
+        android:padding="5dp"/>
+
+    <!--<Button-->
+        <!--android:id="@+id/rank_dialog_button"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:padding="5dp"-->
+        <!--android:focusable="false"-->
+        <!--android:text="ACEPTAR"-->
+        <!--android:backgroundTint="#084a83"-->
+        <!--android:textColor="#FFFFFF"-->
+        <!--android:textSize="20dip" />-->
+
+</LinearLayout>
+
